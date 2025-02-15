@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "calendas";
-  src: url("/assets/css/calendas.woff2") format("woff2");
+  src: url("./assets/css/calendas.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "chewy";
-  src: url("/assets/css/chewy.woff2") format("woff2");
+  src: url("./assets/css/chewy.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -274,7 +274,7 @@ body {
 
   @media (width > 40rem) {
     min-height: 18rem;
-    background: url(/assets/images/teddy.avif) right 10% center no-repeat,
+    background: url(./assets/images/teddy.avif) right 10% center no-repeat,
       linear-gradient(
         to right top,
         var(--color-blue-500),
@@ -284,7 +284,7 @@ body {
   }
 
   @media (prefers-color-scheme: dark) {
-    background: url(/assets/images/teddy.avif) right 10% center no-repeat,
+    background: url(./assets/images/teddy.avif) right 10% center no-repeat,
       linear-gradient(
         to right top,
         var(--color-blue-700),
@@ -474,7 +474,7 @@ body {
 @media (width >= 40rem) {
   .bandeau {
     height: 280px;
-    background: url(/assets/images/collage.avif) center top no-repeat;
+    background: url(./assets/images/collage.avif) center top no-repeat;
   }
 }
 
