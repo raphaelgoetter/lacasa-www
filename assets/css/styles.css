@@ -263,8 +263,8 @@ body {
 
 .hero {
   color-scheme: dark;
-  background: var(--color-blue-500);
-  padding: var(--spacing-m) 0;
+  background: var(--color-blue-700);
+  padding: var(--spacing-l) 0;
   margin-bottom: var(--spacing-l);
   text-align: center;
   & p {
@@ -281,15 +281,15 @@ body {
         var(--color-white) 70%
       );
     text-align: left;
-  }
 
-  @media (prefers-color-scheme: dark) {
-    background: url(../images/teddy.avif) right 10% center no-repeat,
-      linear-gradient(
-        to right top,
-        var(--color-blue-700),
-        var(--color-blue-900) 70%
-      );
+    @media (prefers-color-scheme: dark) {
+      background: url(../images/teddy.avif) right 10% center no-repeat,
+        linear-gradient(
+          to right top,
+          var(--color-blue-700),
+          var(--color-blue-900) 70%
+        );
+    }
   }
 }
 
