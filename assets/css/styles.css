@@ -209,18 +209,12 @@ body {
   }
 }
 
-.header-link {
+.title {
   display: flex;
   gap: var(--spacing-s);
   font-weight: var(--font-weight-extralight);
   font-size: var(--text-4xl);
-  text-decoration: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: none;
-  }
+  color: var(--link);
 }
 
 .header-logo,
