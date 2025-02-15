@@ -23,35 +23,20 @@
 /* ---------------- */
 
 :root {
-  --color-orange-50: oklch(100% 0.02 67);
   --color-orange-100: oklch(95% 0.02 67);
   --color-orange-200: oklch(95% 0.12 67);
   --color-orange-600: oklch(51% 0.1 70);
   --color-orange-bright: oklch(70% 0.2 71);
-  --color-blue-50: oklch(100% 0.1 220);
-  --color-blue-100: oklch(100% 0.07 220);
-  --color-blue-200: oklch(97% 0.07 220);
+
   --color-blue-300: oklch(87% 0.07 220);
-  --color-blue-400: oklch(77% 0.07 220);
   --color-blue-500: oklch(67% 0.07 220);
   --color-blue-600: oklch(57% 0.07 220);
   --color-blue-700: oklch(47% 0.07 220);
-  --color-blue-800: oklch(37% 0.07 220);
   --color-blue-900: oklch(27% 0.07 220);
-  --color-blue-fade: oklch(77% 0 220);
-  --color-blue-bright: oklch(77% 0.17 220);
-  --color-gray-50: oklch(97% 0 0);
-  --color-gray-100: oklch(90% 0 0);
-  --color-gray-200: oklch(80% 0 0);
-  --color-gray-300: oklch(70% 0 0);
-  --color-gray-400: oklch(60% 0 0);
-  --color-gray-500: oklch(50% 0 0);
-  --color-gray-600: oklch(40% 0 0);
-  --color-gray-700: oklch(30% 0 0);
-  --color-gray-800: oklch(20% 0 0);
+
   --color-gray-900: oklch(10% 0 0);
   --color-white: oklch(100% 0 0);
-  --color-black: oklch(0% 0 0);
+
   --spacing-8: 0.5rem;
   --spacing-16: 1rem;
   --spacing-24: 1.5rem;
@@ -60,48 +45,37 @@
 
   --text-16: 1rem;
   --text-18: 1.125rem;
-  --text-20: 1.25rem;
   --text-24: 1.5rem;
   --text-30: 1.875rem;
-  --text-36: 2.25rem;
   --text-48: 3rem;
-  --text-60: 3.75rem;
   --text-60: 3.75rem;
 
   --font-base: system-ui, sans-serif;
   --font-calendas: calendas, georgia, serif;
   --font-chewy: chewy, georgia, serif;
+
   --font-weight-extralight: 200;
-  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  --radius-none: 0;
-  --radius-lg: 0.5rem;
   --radius-xl: 1.5rem;
-  --radius-full: 9999px;
-
-  --z-under-page-level: -1;
-  --z-above-page-level: 1;
-  --z-header-level: 1000;
-  --z-above-header-level: 2000;
-  --z-above-all-level: 3000;
 }
 
 /* ---------------- */
 /* Tokens */
 /* ---------------- */
 
-/* prettier-ignore */
 :root {
   color-scheme: light dark;
 
   --color-primary: light-dark(var(--color-blue-300), var(--color-blue-700));
-  --color-accent: light-dark(var(--color-orange-bright), var(--color-orange-200));
+  --color-accent: light-dark(
+    var(--color-orange-bright),
+    var(--color-orange-200)
+  );
   --surface: light-dark(var(--color-white), var(--color-gray-900));
   --surface-dim: light-dark(var(--color-orange-100), var(--color-orange-600));
-  --on-primary: var(--color-white);
   --on-surface: light-dark(var(--color-gray-900), var(--color-white));
   --link: light-dark(var(--color-blue-700), var(--color-blue-300));
   --link-hover: light-dark(var(--color-blue-900), var(--color-blue-500));
@@ -113,8 +87,16 @@
   --text-5xl: clamp(var(--text-48), 2.7065rem + 1.3043vw, var(--text-60));
 
   --spacing-s: clamp(var(--spacing-8), 0.3043rem + 0.8696vw, var(--spacing-16));
-  --spacing-m: clamp(var(--spacing-16), 0.6087rem + 1.7391vw, var(--spacing-32));
-  --spacing-l: clamp(var(--spacing-24), 0.6087rem + 1.7391vw, var(--spacing-48));
+  --spacing-m: clamp(
+    var(--spacing-16),
+    0.6087rem + 1.7391vw,
+    var(--spacing-32)
+  );
+  --spacing-l: clamp(
+    var(--spacing-24),
+    0.6087rem + 1.7391vw,
+    var(--spacing-48)
+  );
 }
 
 /* Couleur de sélection */
