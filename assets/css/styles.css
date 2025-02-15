@@ -157,7 +157,7 @@ body {
   .hero {
     min-height: 30rem;
     color: var(--black);
-    background: url(img/teddy.png) right 10% center no-repeat,
+    background: url(assets/images/teddy.png) right 10% center no-repeat,
       linear-gradient(to right top, var(--blue-medium), #fff 70%);
     text-align: left;
   }
@@ -311,6 +311,6 @@ body {
 @media (min-width: 640px) {
   .bandeau {
     height: 280px;
-    background: url(img/collage.jpg) center top no-repeat;
+    background: url(assets/images/collage.jpg) center top no-repeat;
   }
 }
