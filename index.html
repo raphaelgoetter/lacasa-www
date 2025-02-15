@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>lacasa cabinet d'infirmières à Furdenheim</title>
     <meta
       name="description"
@@ -20,6 +19,13 @@
       rel="preload"
       as="font"
       href="./assets/css/calendas.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="./assets/css/chewy.woff2"
       type="font/woff2"
       crossorigin="anonymous"
     />
@@ -40,7 +46,7 @@
             alt="lacasa infirmières"
             class="header-logo"
           />
-          lacasa
+          <span aria-hidden="true">lacasa</span>
         </h1>
         <nav class="nav" aria-label="Menu principal">
           <a class="header-tel" href="tel:0388371083"
@@ -88,10 +94,12 @@
       <!-- grid : CV, adresse, contact -->
       <section class="grid" itemscope>
         <div class="card">
-          <svg class="icon icon-injection">
-            <use xlink:href="#icon-injection"></use>
-          </svg>
-          <h2>Qui sommes-nous&nbsp;?</h2>
+          <h2>
+            <svg class="icon icon-injection">
+              <use xlink:href="#icon-injection"></use>
+            </svg>
+            Qui sommes-nous&nbsp;?
+          </h2>
           <p>
             <strong>Cathie Goetter</strong>, <strong>Salwa Hajri</strong>,
             <strong>Laurie Lambert</strong>, Infirmières Diplômées d’Etat
@@ -101,10 +109,12 @@
           </p>
         </div>
         <div class="card">
-          <svg class="icon icon-pil">
-            <use xlink:href="#icon-pil"></use>
-          </svg>
-          <h2>Nous trouver&nbsp;?</h2>
+          <h2>
+            <svg class="icon icon-pil">
+              <use xlink:href="#icon-pil"></use>
+            </svg>
+            Nous trouver&nbsp;?
+          </h2>
           <p>
             Le cabinet infirmier est situé à la
             <strong itemprop="location"
@@ -123,10 +133,12 @@
           </p>
         </div>
         <div class="card">
-          <svg class="icon icon-health">
-            <use xlink:href="#icon-health"></use>
-          </svg>
-          <h2>Nous contacter&nbsp;?</h2>
+          <h2>
+            <svg class="icon icon-health">
+              <use xlink:href="#icon-health"></use>
+            </svg>
+            Nous contacter&nbsp;?
+          </h2>
           <p>Vous pouvez nous contacter par les moyens suivants&nbsp;:</p>
           <ul class="card-list">
             <li>
