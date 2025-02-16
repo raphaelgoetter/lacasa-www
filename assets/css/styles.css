@@ -270,8 +270,8 @@ a {
 
     span {
       display: inline-block;
-      animation: float 1s ease-in-out infinite;
-      --delay: 0s;
+      animation: float 1s var(--delay, 0) ease-in-out infinite;
+      /* --delay: 0; */
 
       &:nth-child(4n) {
         color: hsl(50, 75%, 55%);
@@ -292,6 +292,9 @@ a {
         color: hsl(30, 65%, 60%);
         text-shadow: 1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%),
           3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%);
+      }
+      &:nth-child(1) {
+        --delay: 0.02s;
       }
       &:nth-child(2) {
         --delay: 0.05s;
@@ -316,13 +319,10 @@ a {
       color: var(--blue-dark);
       text-shadow: 1px 1px var(--color-white);
     }
-
-    &:hover {
-      & span {
-        animation: bounce 0.6s var(--delay);
-      }
-    }
   }
+}
+.hero:hover .title-fun span {
+  animation: bounce 0.6s var(--delay);
 }
 
 /* ---------------- */
