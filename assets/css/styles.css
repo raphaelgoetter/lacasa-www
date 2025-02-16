@@ -69,6 +69,11 @@
 :root {
   color-scheme: light dark;
 
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 64rem; /* 1024px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 96rem; /* 1536px */
+
   --color-primary: light-dark(var(--color-blue-300), var(--color-blue-700));
   --color-accent: light-dark(var(--color-orange-bright), var(--color-orange-200));
   --surface: light-dark(var(--color-white), var(--color-gray-900));
@@ -94,6 +99,13 @@
 }
 
 /* ---------------- */
+/* Layouts */
+/* ---------------- */
+.liquid {
+  --liquid-content: var(--breakpoint-xl);
+}
+
+/* ---------------- */
 /* Body et Typo */
 /* ---------------- */
 
@@ -103,17 +115,11 @@ html {
 }
 
 body {
-  max-width: 95%;
-  margin-inline: auto;
   overflow-x: hidden;
   font-size: var(--text-m);
   font-family: var(--font-base);
   color: var(--on-surface);
   background: var(--surface);
-
-  @media (width > 40rem) {
-    max-width: 80%;
-  }
 }
 
 h1,
@@ -236,7 +242,7 @@ a {
     color: var(--on-surface);
   }
 
-  @media (width > 40rem) {
+  @media (width > 48rem) {
     min-height: 18rem;
     background: url(../images/teddy.avif) right 10% center no-repeat,
       linear-gradient(
@@ -261,7 +267,7 @@ a {
   font-family: var(--font-base);
   font-weight: var(--font-weight-bold);
 
-  @media (width > 40rem) {
+  @media (width > 48rem) {
     font-size: var(--text-5xl);
     font-family: var(--font-chewy);
     color: var(--color-blue-600);
@@ -429,7 +435,7 @@ a {
 /* Bandeau */
 /* ---------------- */
 
-@media (width >= 40rem) {
+@media (width >= 48rem) {
   .bandeau {
     height: 280px;
     background: url(../images/collage.avif) center top no-repeat;
@@ -439,20 +445,6 @@ a {
 /* ---------------- */
 /* Utilities */
 /* ---------------- */
-
-.full-bleed {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-.wrapper {
-  max-width: 95%;
-  margin-inline: auto;
-
-  @media (width > 40rem) {
-    max-width: 80%;
-  }
-}
 
 .visually-hidden {
   position: absolute !important;
